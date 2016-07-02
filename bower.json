@@ -1,0 +1,23 @@
+{
+  "name": "my-website-ui",
+  "description": "ui for my personal website",
+  "main": "",
+  "authors": [
+    "xinhe huang"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/huntriver/myWebSiteUI",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "font-awesome": "^4.6.3",
+    "angular": "^1.5.7"
+  }
+}
