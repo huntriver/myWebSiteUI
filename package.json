@@ -14,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/huntriver/myWebSiteUI/issues"
   },
-  "homepage": "https://github.com/huntriver/myWebSiteUI#readme"
+  "homepage": "https://github.com/huntriver/myWebSiteUI#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
 }
