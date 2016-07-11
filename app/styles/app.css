@@ -1,10 +1,21 @@
 body
  {
-     background-color: #F6F6F6;
- }
+    background-color: #F6F6F6;
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
+}
 .wrapper {
-    float: none;;
+    float: none;
     margin:0 auto;
-    width:960px;
+    width:80%;
     text-align:center;
+}
+header{
+    width: 100%;
+    max-width: 100%;
+    z-index: 999;
+
 }

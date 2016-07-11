@@ -3,6 +3,8 @@ body .navbar {
     font-size: 20px;
     font-family: "Tahoma",Arial,sans-serif;
     font-weight: bold;
+    background: #F6F6F6;
+    box-shadow: 0 10px 20px #F6F6F6;
 }
 body .navbar ul{
     float:right

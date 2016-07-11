@@ -6,7 +6,8 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
         'ui.router',
-        'ui.bootstrap'
+        'ui.bootstrap',
+        'mgcrea.ngStrap'
     ])
     .config(function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/home');
