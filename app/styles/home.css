@@ -1,0 +1,36 @@
+
+.homePage section{
+    margin:0;
+    padding: 0;
+    line-height: 1.2;
+}
+.homePage  .lead{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+
+
+.homePage .bio {
+    background: #2B2B2B;
+    color: #ffffff;
+
+
+}
+
+
+.homePage .bio p{
+    margin-bottom: 15px;
+    font-size: 40px;
+    margin:0;
+    padding: 0;
+}
+
+
+.homePage .proj {
+    background: #F6F6F6;
+    color: #2B2B2B;
+
+
+}

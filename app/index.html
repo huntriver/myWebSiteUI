@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My WebSite</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <!-- endbower -->
+
+    <!-- include: "type": "css", "files": "styles/*.css" -->
+
+
+<link href="/styles/app.css" rel="stylesheet" type="text/css">
+    <link href="/styles/home.css" rel="stylesheet" type="text/css">
+    <link href="/styles/navBar.css" rel="stylesheet" type="text/css">
+    <link href="/styles/reset.css" rel="stylesheet" type="text/css">
+    <!-- /include -->
+</head>
+<body>
+
+<header>
+    <div class="wrapper">
+        <!--NAV-->
+        <nav class="navbar" role="navigation" id="myNavBar">
+            <ul class="nav navbar-nav">
+                <li ui-sref-active="active"><a ui-sref="home"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                <li ui-sref-active="active"><a ui-sref="about">About</a></li>
+                <li ui-sref-active="active"><a ui-sref="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<ui-view>
+
+</ui-view>
+
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.js"></script>
+<!-- endbower -->
+
+<!-- include: "type": "js", "files": ["scripts/**/*.js"] -->
+<script src="/scripts/app.js"></script>
+<!-- /include -->
+</body>
+</html>

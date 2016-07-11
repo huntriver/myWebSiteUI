@@ -1,0 +1,10 @@
+body
+ {
+     background-color: #F6F6F6;
+ }
+.wrapper {
+    float: none;;
+    margin:0 auto;
+    width:960px;
+    text-align:center;
+}

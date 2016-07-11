@@ -1,0 +1,14 @@
+body .navbar {
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family: "Tahoma",Arial,sans-serif;
+    font-weight: bold;
+}
+body .navbar ul{
+    float:right
+
+}
+body .navbar a{
+    color: #0f0f0f;
+
+}
