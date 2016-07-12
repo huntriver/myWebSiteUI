@@ -7,7 +7,6 @@
 angular.module('myApp', [
         'ui.router',
         'ui.bootstrap',
-        'mgcrea.ngStrap'
     ])
     .config(function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/home');
