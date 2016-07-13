@@ -24,7 +24,8 @@ module.exports = function (grunt) {
         wiredep: {
             app: {
                 src: ['app/index.html'],
-                ignorePath: /\.\.\//
+                ignorePath: /\.\.\//,
+                exclude:['js-rich-marker','google-maps-utility-library-v3-markerwithlabel','google-maps-utility-library-v3-infobox','google-maps-utility-library-v3-keydragzoom']
             },
             //test: {
             //    devDependencies: true,
