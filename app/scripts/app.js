@@ -7,6 +7,7 @@
 angular.module('myApp', [
         'ui.router',
         'ui.bootstrap',
+        'uiGmapgoogle-maps'
     ])
     .config(function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/home');
@@ -28,6 +29,13 @@ angular.module('myApp', [
                 url: '/contact',
                 templateUrl: 'scripts/contact/contact.html'
             });
+    })
+    .config(function(uiGmapGoogleMapApiProvider) {
+        uiGmapGoogleMapApiProvider.configure({
+            key: 'AIzaSyCCDAlm1xXm0aYXAYcfVheJvKSKttIgCM8',
+            v: '3.23', //defaults to latest 3.X anyhow
+            libraries: 'weather,geometry,visualization'
+        });
     })
 
 

@@ -16,6 +16,18 @@ header .myNavBar a{
     color: #0f0f0f;
 
 }
+header .myNavBar a:hover{
+    color: #cb5211;
+    background-color: inherit;
+
+}
+header .myNavBar li.active a{
+    color: #cb5211;
+    background-color: inherit;
+
+}
+
+
 header {
     position: fixed;
     top: 0;
@@ -23,6 +35,5 @@ header {
     z-index: 9999;
     width: 100%;
     height: 50px;
-
     background-color: rgba(246, 246, 246, 0.80);
 }

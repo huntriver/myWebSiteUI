@@ -8,28 +8,40 @@
                 <div class="col-xs-12 col-sm-6">
                     <div class="formContainer">
                         <form name="userForm" ng-submit="submitForm()" novalidate>
-                            <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+                            <div class="form-group"
+                                 ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
                                 <!--<label>Name</label>-->
-                                <input type="text" name="firstName" placeholder="First Name"  ng-model="user.firstName" required>
-                                <p ng-show="userForm.firstName.$invalid && !userForm.firstName.$pristine" class="help-block">You first name is required.</p>
+                                <input type="text" name="firstName" placeholder="First Name" ng-model="user.firstName"
+                                       required>
+                                <p ng-show="userForm.firstName.$invalid && !userForm.firstName.$pristine"
+                                   class="help-block">You first name is required.</p>
                             </div>
-                            <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+                            <div class="form-group"
+                                 ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
                                 <!--<label>Name</label>-->
-                                <input type="text" name="lastName" placeholder="Last Name"  ng-model="user.lastName" required>
-                                <p ng-show="userForm.lastName.$invalid && !userForm.lastName.$pristine" class="help-block">You last name is required.</p>
+                                <input type="text" name="lastName" placeholder="Last Name" ng-model="user.lastName"
+                                       required>
+                                <p ng-show="userForm.lastName.$invalid && !userForm.lastName.$pristine"
+                                   class="help-block">You last name is required.</p>
                             </div>
-                            <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+                            <div class="form-group"
+                                 ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
                                 <!--<label>Email</label>-->
-                                <input type="email" name="email" placeholder="Email"  ng-model="user.email" required>
-                                <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+                                <input type="email" name="email" placeholder="Email" ng-model="user.email" required>
+                                <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">
+                                    Enter a valid email.</p>
                             </div>
-                            <div class="form-group" ng-class="{ 'has-error' : userForm.message.$invalid && !userForm.message.$pristine }">
+                            <div class="form-group"
+                                 ng-class="{ 'has-error' : userForm.message.$invalid && !userForm.message.$pristine }">
                                 <!--<label>Message</label>-->
-                                <textarea type="text" name="message" placeholder="Message"  ng-model="user.message" required/>
-                                <p ng-show="userForm.message.$invalid && !userForm.message.$pristine" class="help-block">You message is required.</p>
+                                <textarea type="text" name="message" placeholder="Message" ng-model="user.message"
+                                          required/>
+                                <p ng-show="userForm.message.$invalid && !userForm.message.$pristine"
+                                   class="help-block">You message is required.</p>
                             </div>
 
-                            <button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Submit</button>
+                            <button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Submit
+                            </button>
 
 
                         </form>
@@ -37,6 +49,48 @@
                 </div>
                 <div class="col-xs-12 col-sm-6">
 
+                    <div class="infoContainer">
+                        <p style="font-size: 25px">Xinhe Huang</p>
+                        <p>185 freeman St, Brookline, MA 02446</p>
+                        <p>
+                            <a href="tel:+13474468349">347-446-8349</a>
+                        </p>
+                        <p>
+                            <a href="mailto:huntriver@hotmail.com">hutnriver@hotmail.com</a>
+                        </p>
+
+                        <div class="iconContainer">
+
+
+                            <span>
+                             <a href="https://www.linkedin.com/in/xinhe-huang-47236baa">
+                                 <i class="fa fa-linkedin" />
+                             </a>
+                         </span>
+                            </span>
+                            <span >
+                             <a href="https://github.com/huntriver">
+                                 <i class="fa fa-github" />
+                             </a>
+                         </span>
+                            </span>
+                            <span >
+                             <a href=" https://www.facebook.com/xinhe.huang.9">
+                                 <i class="fa fa-facebook" />
+                             </a>
+                         </span>
+
+                        </div>
+
+
+                    </div>
+                    <div class="mapContainer">
+                        <ui-gmap-google-map center='map.center' zoom='map.zoom' control="googlemap">
+                            <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events"
+                                            idkey="marker.id">
+                            </ui-gmap-marker>
+                        </ui-gmap-google-map>
+                    </div>
                 </div>
             </div>
 
