@@ -7,7 +7,8 @@
 angular.module('myApp', [
         'ui.router',
         'ui.bootstrap',
-        'uiGmapgoogle-maps'
+        'uiGmapgoogle-maps',
+        'ngAnimate'
     ])
     .config(function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/home');

@@ -3,9 +3,6 @@
 
 header .myNavBar {
     margin-bottom: 0px;
-    font-size: 20px;
-    font-family: "Tahoma",Arial,sans-serif;
-    font-weight: 400;
     float:right
 }
 /*body .navbar ul{*/
@@ -14,15 +11,18 @@ header .myNavBar {
 /*}*/
 header .myNavBar a{
     color: #0f0f0f;
-
+    font-size: 20px;
+    font-family: "Tahoma",Arial,sans-serif;
 }
 header .myNavBar a:hover{
-    color: #cb5211;
+    /*color: #cb5211;*/
+    font-weight:200;
     background-color: inherit;
 
 }
 header .myNavBar li.active a{
-    color: #cb5211;
+    color: grey;
+    font-weight:200;
     background-color: inherit;
 
 }
@@ -35,5 +35,6 @@ header {
     z-index: 9999;
     width: 100%;
     height: 50px;
-    background-color: rgba(246, 246, 246, 0.80);
+    /*background-color: rgba(246, 246, 246, 0.80);*/
+    background-color: rgba(255, 255, 255, 0.80);
 }
