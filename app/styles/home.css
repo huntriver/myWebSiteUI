@@ -1,7 +1,7 @@
 
 .homePage section{
-    margin:0;
-    padding: 0;
+    margin-bottom:20px;
+    /*padding-bottom: 20px;*/
     line-height: 1.2;
 }
 .homePage  .lead{
@@ -10,17 +10,13 @@
     margin-bottom:0px;
 }
 
-
-
-.homePage .bio {
+.homePage #intro-section {
     background: #2B2B2B;
     color: #ffffff;
 
 
 }
-
-
-.homePage .bio p{
+.homePage #intro-section p{
     margin-bottom: 10px;
     font-size: 40px;
     margin:0;
@@ -28,9 +24,37 @@
 }
 
 
-.homePage .proj {
-    background: #F6F6F6;
-    color: #2B2B2B;
 
-
+.homePage #project-section .title{
+    text-align:left;
+    color:#5d5d5d;
+    font-weight:500;
+    font-size:30px;
+    font-family: "Tahoma",Arial,sans-serif;
 }
+
+.homePage #project-section .projectContainer{
+    width:100%;
+    height: 300px;
+    display:table;
+    padding-bottom: 50px;
+}
+
+.homePage #project-section .projectContainer img{
+    width:90%;
+    padding: 20px 10px;
+    padding-bottom:0px;
+    height: auto;
+}
+
+.homePage #project-section .projectContainer .project-name{
+    margin-top:20px;
+    font-size:30px;
+    font-weight:500;
+}
+.homePage #project-section #tbc{
+    display:table-cell;
+    vertical-align:middle;
+    font-size:40px;
+    font-weight:bold;
+ }

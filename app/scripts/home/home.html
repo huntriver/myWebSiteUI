@@ -1,20 +1,42 @@
-<div class="homePage">
+<div class="homePage" ng-controller="homeCtrl">
 
 
-    <section>
-        <article class="bio">
-            <div class="wrapper animated fadeInUpBig">
+    <section id="intro-section">
+
+            <div class="wrapper">
                 <div class="lead">
                     <p>hi I'm Xinhe</p>
                     <p>I am a coder and designer.</p>
                     <p>I like creating fun and beautiful work</p>
                 </div>
             </div>
-        </article>
+
 
     </section>
 
+    <section id="project-section">
+        <div class="wrapper">
+        <div class="row">
+            <h2 class="title">my recent projects</h2>
+        </div>
+        <div class="row">
+            <div ng-repeat="proj in projects" class="col-xs-6 col-md-4">
+                <div class=" projectContainer">
+                <a ng-href="{{proj.link}}" target="_blank">
+                    <img ng-src="{{proj.img}}"/>
+                </a>
+                    <div class="project-name">{{proj.name}}</div>
+                </div>
+            </div>
+            <div  class="col-xs-6 col-md-4">
+                <div class="projectContainer">
+            <span id="tbc">TO BE CONTINUED...</span>
+                </div>.
+            </div>
 
+        </div>
+        </div>
+    </section>
 
 
 
