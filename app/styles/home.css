@@ -58,3 +58,57 @@
     font-size:40px;
     font-weight:bold;
  }
+
+
+.homePage #project-section .title{
+    text-align:left;
+    color:#5d5d5d;
+    font-weight:500;
+    font-size:30px;
+    font-family: "Tahoma",Arial,sans-serif;
+}
+
+.homePage #project-section .projectContainer{
+    width:100%;
+    height: 300px;
+    display:table;
+    padding-bottom: 50px;
+}
+
+.homePage #project-section .projectContainer img{
+    width:90%;
+    padding: 20px 10px;
+    padding-bottom:0px;
+    height: auto;
+}
+
+.homePage #project-section .projectContainer .project-name{
+    margin-top:20px;
+    font-size:30px;
+    font-weight:500;
+}
+.homePage #project-section #tbc{
+    display:table-cell;
+    vertical-align:middle;
+    font-size:40px;
+    font-weight:bold;
+}
+
+.homePage #skill-section{
+    /*background: #2B2B2B;*/
+    color: #ffffff;
+}
+
+.homePage #skill-section .title{
+    text-align:left;
+    font-weight:500;
+    font-size:30px;
+    font-family: "Tahoma",Arial,sans-serif;
+}
+
+.homePage #skill-section .x.axis path{
+     display:none;
+ }
+.homePage #skill-section .x.axis .tick line{
+    display:none;
+}

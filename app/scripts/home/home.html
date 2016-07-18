@@ -3,41 +3,53 @@
 
     <section id="intro-section">
 
-            <div class="wrapper">
-                <div class="lead">
-                    <p>hi I'm Xinhe</p>
-                    <p>I am a coder and designer.</p>
-                    <p>I like creating fun and beautiful work</p>
-                </div>
+        <div class="wrapper">
+            <div class="lead">
+                <p>hi I'm Xinhe</p>
+                <p>I am a coder and designer.</p>
+                <p>I like creating fun and beautiful work</p>
             </div>
+        </div>
 
 
     </section>
 
     <section id="project-section">
         <div class="wrapper">
-        <div class="row">
-            <h2 class="title">my recent projects</h2>
-        </div>
-        <div class="row">
-            <div ng-repeat="proj in projects" class="col-xs-6 col-md-4">
-                <div class=" projectContainer">
-                <a ng-href="{{proj.link}}" target="_blank">
-                    <img ng-src="{{proj.img}}"/>
-                </a>
-                    <div class="project-name">{{proj.name}}</div>
+            <div class="row">
+                <h2 class="title">my recent projects</h2>
+            </div>
+            <div class="row">
+                <div ng-repeat="proj in projects" class="col-xs-6 col-md-4">
+                    <div class=" projectContainer">
+                        <a ng-href="{{proj.link}}" target="_blank">
+                            <img ng-src="{{proj.img}}"/>
+                        </a>
+                        <div class="project-name">{{proj.name}}</div>
+                    </div>
                 </div>
-            </div>
-            <div  class="col-xs-6 col-md-4">
-                <div class="projectContainer">
-            <span id="tbc">TO BE CONTINUED...</span>
-                </div>.
-            </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="projectContainer">
+                        <span id="tbc">TO BE CONTINUED...</span>
+                    </div>
+                    .
+                </div>
 
-        </div>
+            </div>
         </div>
     </section>
+    <section id="skill-section">
+        <div class="wrapper">
+            <div class="row">
+                <h2 class="title">my skills</h2>
+            </div>
+            <div class="row">
 
+                <div bar-chart data="bardata" config="barconfig">
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 </div>
