@@ -34,7 +34,7 @@
         <nav class="myNavBar">
             <ul class="nav navbar-nav">
                 <li ui-sref-active="active"><a ui-sref="home"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-                <li ui-sref-active="active"><a ui-sref="about">About</a></li>
+                <!--<li ui-sref-active="active"><a ui-sref="about">About</a></li>-->
                 <li ui-sref-active="active"><a ui-sref="contact">Contact</a></li>
             </ul>
         </nav>
@@ -50,12 +50,21 @@
 <!--</nav>-->
 
 
-
-    <div  ui-view></div>
-
-
-
-
+<div ui-view></div>
+<!--<footer>-->
+    <!--<div class="wrapper">-->
+        <!--<section>-->
+            <!--<small class="right">© 2016 Xinhe Huang.</small>-->
+        <!--</section>-->
+    <!--</div>-->
+<!--</footer>-->
+<footer class="footer">
+    <div class="wrapper">
+    <section>
+    <small class="right">© 2016 Xinhe Huang.</small>
+    </section>
+    </div>
+</footer>
 <!-- bower:js -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/angular/angular.js"></script>
@@ -75,6 +84,7 @@
 <!-- include: "type": "js", "files": ["scripts/**/*.js"] -->
 <script src="/scripts/app.js"></script>
 <script src="/scripts/components/barchart/barchart.js"></script>
+<script src="/scripts/components/waypoint/waypoint.js"></script>
 <script src="/scripts/contact/contact.js"></script>
 <script src="/scripts/home/home.js"></script>
 <!-- /include -->

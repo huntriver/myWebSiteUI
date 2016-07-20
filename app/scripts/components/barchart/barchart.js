@@ -37,7 +37,7 @@ angular.module('myApp')
                 return d.name;
             }));
             y.domain([0, 100]);
-            console.log(y.domain)
+
             svg.append("g")
                 .attr("class", "x axis")
 
@@ -58,6 +58,8 @@ angular.module('myApp')
                 .data(data)
                 .enter().append("rect")
                 .attr("class", "bar")
+                .attr("rx",10)
+                .attr("ry",10)
                 .attr("y", function (d) {
                     return x(d.name);
                 })
@@ -67,16 +69,16 @@ angular.module('myApp')
                 })
                 .attr("width", 0);
 
-            svg.selectAll(".bar")
-                .transition()
-                .duration(config.duration)
-                .attr("width", function (d) {
-                    return y(d.number);
-                });
-            function type(d) {
-                d.number = +d.number;
-                return d;
+            scope.animation = function () {
+                svg.selectAll(".bar")
+                    .attr("width", 0)
+                    .transition()
+                    .duration(config.duration)
+                    .attr("width", function (d) {
+                        return y(d.number);
+                    });
             }
+            scope.animation();
 
         }
         var controller = function ($scope) {
@@ -86,7 +88,8 @@ angular.module('myApp')
             link: link,
             scope: {
                 "config": "=",
-                "data": "="
+                "data": "=",
+                "animation": "=",
             },
             controller: controller,
             template: "<div class='barchart-wrapper'></div>",

@@ -1,7 +1,22 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
 body
  {
     background-color: #F6F6F6;
     padding-top: 70px;
+    margin-bottom: 50px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 50px;
+    color:	#F5F5F5;
+    background-color: #000000;
 }
 
 @media screen and (max-width: 768px) {
@@ -14,7 +29,13 @@ body
     text-align:center;
     height:inherit;
 }
-
+/*footer{*/
+    /*color:	#F5F5F5;*/
+    /*background-color: #000000;*/
+/*}*/
+footer section{
+    padding:10px 0px;
+}
 
 [ui-view].ng-enter {
     transition:0.5s  linear all;

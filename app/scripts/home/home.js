@@ -4,51 +4,71 @@
 'use strict';
 
 angular.module('myApp')
-    .controller('homeCtrl', function ($scope) {
-        $scope.$on('$viewContentLoaded',
-            function(event){
-               console.log(123);
-            });
+    .controller('homeCtrl', function ($scope,$timeout) {
+        // $scope.$on('$viewContentLoaded',
+        //     function(event){
+        //        console.log(123);
+        //     });
         // angular.element(document).ready(function () {
         //     $('#skill-section').waypoint(function() {
         //         console.log(12323);
         //     })
         // });
+        // $scope.$on('$viewContentLoaded', function() {
+        //     console.log(123);
+        // });
+        // console.log(1);
+        // var waypoint = new Waypoint({
+        //     element: document.getElementById('skill-section'),
+        //     handler: function(direction) {
+        //         console.log('Scrolled to waypoint!');
+        //     }
+        // });
+        // Waypoint.refreshAll()
+        //
+        // $('#skill-section').waypoint(function() {
+        //     console.log(12323);
+        // })
 
+        //
+        // $timeout($('#skill-section').waypoint(function(direction) {
+        //     console.log(direction);
+        // }))
 
-        var waypoint = new Waypoint({
-            element: document.getElementById('skill-section'),
-            handler: function(direction) {
-                console.log('Scrolled to waypoint!');
-            }
-        });
+        // console.log($('#skill-section'));
         $scope.projects = [
             {
                 name: 'Angular Components',
                 link: 'https://gp.ca.com',
-                img: 'img/angularjs.png'
+                img: 'img/angularjs.png',
+                description: 'This project is a collection of CA designed AngularJS UI Components.'
             },
             {
-                name: 'CA IOT',
+                name: 'IOT UI',
                 link: 'https://gp.ca.com',
-                img: 'img/ca.png'
+                img: 'img/ca.png',
+                description: 'This project is the UI for IoT project.'
             },
             {
-                name: 'FacebookPlus',
+                name: 'Facebook Plus',
                 link: 'https://github.com/huntriver/FacebookPlus-CSE-305-',
-                img: 'img/fb+.png'
+                img: 'img/fb+.png',
+                description:'This project is a social network system'
+
             },
 
             {
                 name: 'Tank VS Bugs',
                 link: 'https://github.com/huntriver/TankVSBugs-CSE380-',
-                img: 'img/tankvsbugs.png'
+                img: 'img/tankvsbugs.png',
+                description:'This project is a game written in C++ with Box2D and Lua scripts.'
             },
 
             {
                 name: 'JOS',
                 link: 'https://github.com/huntriver/JOS-CSE-506-',
-                img: 'img/jos.png'
+                img: 'img/jos.png',
+                description: 'a series of labs where you build up an operating system called JOS. '
             },
         ]
         // {
@@ -58,13 +78,13 @@ angular.module('myApp')
         // },
         $scope.barconfig = {
             width: 960,
-            height: 500,
+            height: 300,
             padding: 0.2,
             margin: {top: 20, right: 20, bottom: 30, left: 80},
             // legendSpacing: 5,
             // legendRectSize: 20,
             // tipHeight: 40,
-            duration: 400,
+            duration: 600,
             yDomain: 'number',
             xDomain: 'name'
         };

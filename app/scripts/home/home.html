@@ -21,16 +21,25 @@
             </div>
             <div class="row">
                 <div ng-repeat="proj in projects" class="col-xs-6 col-md-4">
-                    <div class=" projectContainer">
-                        <a ng-href="{{proj.link}}" target="_blank">
-                            <img ng-src="{{proj.img}}"/>
-                        </a>
-                        <div class="project-name">{{proj.name}}</div>
+                    <div class="projectContainer">
+                        <div class="hovereffect">
+                            <!--<a ng-href="{{proj.link}}" target="_blank">-->
+                            <img class="img-responsive" ng-src="{{proj.img}}" alt=""/>
+                            <div class="overlay">
+                                <h2>{{proj.name}}</h2>
+                                <p>
+
+                                    <a class="info" ng-href="{{proj.link}}" target="_blank">{{proj.description}}</a>
+                                </p>
+                            </div>
+                            <!--</a>-->
+                            <!--<div class="project-name">{{proj.name}}</div>-->
+                        </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-md-4">
                     <div class="projectContainer">
-                        <span id="tbc">TO BE CONTINUED...</span>
+                        <span id="tbc" style="position:relative;top:50px">TO BE CONTINUED...</span>
                     </div>
                     .
                 </div>
@@ -38,18 +47,32 @@
             </div>
         </div>
     </section>
-    <section id="skill-section">
+    <section id="skill-section" my-waypoint>
         <div class="wrapper">
             <div class="row">
                 <h2 class="title">my skills</h2>
             </div>
             <div class="row">
 
-                <div bar-chart data="bardata" config="barconfig">
+                <div bar-chart data="bardata" config="barconfig" animation="animation">
                 </div>
             </div>
         </div>
     </section>
+    <section id="about-section">
+        <div class="wrapper">
+            <div class="row">
+                <h2 class="title">About me</h2>
+            </div>
+            <div class="row">
 
+                <p>
+                    Xinhe Huang is a 23 years old web developer and ui/ux designer. He received his master's degree from
+                    Stony Brook University in 2016. I am self-taught and constantly learning. I am always looking for a
+                    new challenge!
+                </p>
+            </div>
+        </div>
+    </section>
 
 </div>
