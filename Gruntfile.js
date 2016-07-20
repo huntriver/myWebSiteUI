@@ -59,12 +59,28 @@ module.exports = function (grunt) {
                 }
             }
         },
+
+         useminPrepare: {
+                html: "app/index.html",
+                options: {
+                    dest: "build"
+                }
+
+            },
+
+            // Performs rewrites based on filerev and the useminPrepare configuration
+            usemin: {
+                html: ['build/{,*/}*.html'],
+                css: ['build/styles/{,*/}*.css'],
+                options: {
+                    dirs: ['build']
+                }
+            },
+
+
         clean: {
             dist: {
-                files: [{
-                    dot: true,
-                    src: ['.tmp', '<%= paths.dist %>/*', '!<%= paths.dist %>/.git*']
-                }]
+              src:['']
             },
         },
         copy: {
@@ -154,11 +170,13 @@ module.exports = function (grunt) {
     });
     
     grunt.registerTask('build', [
-        'clean:dist',
-        'concat',
+        'useminPrepare',
+        'concat:generated',
+        'ngAnnotate',
         'uglify',
         'cssmin',
-        'copy:dist'
+        'copy:build',
+        'usemin',
     ]);
     grunt.registerTask('dev', [
         'wiredep',
