@@ -8,7 +8,8 @@ angular.module('myApp', [
     'ui.router',
     'ui.bootstrap',
     'uiGmapgoogle-maps',
-    'ngAnimate'
+    'ngAnimate',
+    'ajoslin.promise-tracker'
 ])
     .config(function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/home');

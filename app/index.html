@@ -13,10 +13,14 @@
     <title>My WebSite</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- build:css(app) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css(app) styles/main.css -->
 
     <!-- include: "type": "css", "files": "styles/*.css" -->
 
@@ -27,6 +31,7 @@
     <link href="/styles/home.css" rel="stylesheet" type="text/css">
     <link href="/styles/reset.css" rel="stylesheet" type="text/css">
     <!-- /include -->
+    <!-- endbuild -->
 </head>
 <body>
 <header>
@@ -65,6 +70,7 @@
     </section>
     </div>
 </footer>
+<!-- build:js(app) scripts/vendor.js -->
 <!-- bower:js -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/angular/angular.js"></script>
@@ -79,8 +85,10 @@
 <script src="bower_components/angular-animate/angular-animate.js"></script>
 <script src="bower_components/d3/d3.js"></script>
 <script src="bower_components/waypoints/lib/jquery.waypoints.js"></script>
+<script src="bower_components/promise-tracker/promise-tracker.js"></script>
 <!-- endbower -->
-
+<!-- endbuild -->
+<!-- build:js(app) scripts/main.js -->
 <!-- include: "type": "js", "files": ["scripts/**/*.js"] -->
 <script src="/scripts/app.js"></script>
 <script src="/scripts/components/barchart/barchart.js"></script>
@@ -88,5 +96,7 @@
 <script src="/scripts/contact/contact.js"></script>
 <script src="/scripts/home/home.js"></script>
 <!-- /include -->
+<!-- endbuild -->
+
 </body>
 </html>

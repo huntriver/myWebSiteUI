@@ -34,18 +34,21 @@
 }
 .contact-page .formContainer button{
     margin-top:-15px;
+    /*margin-left:-300px;*/
     margin-bottom:20px;
+    cursor: default;
 }
 .contact-page .angular-google-map-container {
     height: 400px;
 }
 
-.contact-page .infoContainer p,a{
+.contact-page .infoContainer p, .contact-page .infoContainer a{
     font-weight: 700;
     text-align:left;
     color: #0f0f0f;
     font-size: 15px;
 }
+
 .contact-page h3{
     text-align:left;
 
@@ -75,4 +78,34 @@
 
     color: rgb(0, 0, 0);
 
+}
+
+
+.modal {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.contact-page .progress{
+    height:50px;
+    /*margin-bottom:0px;*/
+    width:95%;
+    margin:0 auto;
+}
+.contact-page .alert{
+    margin:0 auto;
 }

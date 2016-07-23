@@ -4,7 +4,7 @@
 'use strict';
 
 angular.module('myApp')
-    .controller('homeCtrl', function ($scope,$timeout) {
+    .controller('homeCtrl', function ($scope, $timeout,$window) {
         // $scope.$on('$viewContentLoaded',
         //     function(event){
         //        console.log(123);
@@ -53,7 +53,7 @@ angular.module('myApp')
                 name: 'Facebook Plus',
                 link: 'https://github.com/huntriver/FacebookPlus-CSE-305-',
                 img: 'img/fb+.png',
-                description:'This project is a social network system'
+                description: 'This project is a social network system'
 
             },
 
@@ -61,7 +61,7 @@ angular.module('myApp')
                 name: 'Tank VS Bugs',
                 link: 'https://github.com/huntriver/TankVSBugs-CSE380-',
                 img: 'img/tankvsbugs.png',
-                description:'This project is a game written in C++ with Box2D and Lua scripts.'
+                description: 'This project is a game written in C++ with Box2D and Lua scripts.'
             },
 
             {
@@ -77,10 +77,10 @@ angular.module('myApp')
         //     img:'img/tobecontinued.png'
         // },
         $scope.barconfig = {
-            width: 960,
+            // width: 960,
             height: 300,
             padding: 0.2,
-            margin: {top: 20, right: 20, bottom: 30, left: 80},
+            margin: {top: 20, right: 0, bottom: 30, left: 100},
             // legendSpacing: 5,
             // legendRectSize: 20,
             // tipHeight: 40,
@@ -107,14 +107,46 @@ angular.module('myApp')
                 number: 20
             },
             {
-                name:"C",
-                number:50
+                name: "C",
+                number: 50
             },
             {
                 name: "Java",
                 number: 70
             },
         ]
+        // angular.element(document).ready(function () {
+        //     console.log('her');
+        //     setFontSize();
+        // });
+
+        // angular.element($window).on('resize', function () {
+        //
+        //     setFontSize();
+        // });
+        // function setFontSize(){
+        //     var w=$(".projectContainer").width();
+        //     console.log(document);
+        //     console.log($("h2"));
+        //    console.log( $(".projectContainer h2").css('font-size'));
+        //
+        //     $(".projectContainer h2").css("font-size",w*30/467.45+"px");
+        //     $(".projectContainer p,.projectContainer a").css("font-size",w*25/467.45+"px");
+        // }
 
 
+    })
+    .directive('repeatDirective',function($window){
+        return function(scope,element,attrs){
+            setFontSize();
+            angular.element($window).on('resize', function () {
+
+                setFontSize();
+            });
+            function setFontSize() {
+                var w = $(".projectContainer").width();
+                angular.element(element).find("h2").css("font-size", w * 30 / 467.45 + "px");
+                angular.element(element).find("p,a").css("font-size", w * 25 / 467.45 + "px");
+            }
+        }
     });

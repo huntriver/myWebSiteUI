@@ -14,8 +14,7 @@ angular.module("myApp")
                     handler: function (direction) {
 
                         if (direction == "down") {
-                            console.log(123);
-                            console.log(scope);
+
                             scope.animation();
 
                         }
