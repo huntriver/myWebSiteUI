@@ -36,6 +36,9 @@ angular.module('myApp')
         // }))
 
         // console.log($('#skill-section'));
+
+
+
         $scope.projects = [
             {
                 name: 'Angular Components',
@@ -52,7 +55,7 @@ angular.module('myApp')
             {
                 name: 'Facebook Plus',
                 link: 'https://github.com/huntriver/FacebookPlus-CSE-305-',
-                img: 'img/fb+.png',
+                img: 'img/fbplus.png',
                 description: 'This project is a social network system'
 
             },
@@ -138,6 +141,20 @@ angular.module('myApp')
     })
     .directive('repeatDirective',function($window){
         return function(scope,element,attrs){
+            // console.log(element.find(".hovereffect"));
+            element.find(".hovereffect").on('touchstart', function (e) {
+                'use strict'; //satisfy code inspectors
+                var link = $(this); //preselect the link
+                if (link.hasClass('hover')) {
+                    return true;
+                } else {
+                    link.addClass('hover');
+                    $('.hovereffect').not(this).removeClass('hover');
+                    e.preventDefault();
+                    return false; //extra, and to make sure the function has consistent return points
+                }
+            });
+
             setFontSize();
             angular.element($window).on('resize', function () {
 
