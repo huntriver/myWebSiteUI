@@ -7,6 +7,7 @@ body
     background-color: #F6F6F6;
     padding-top: 70px;
     margin-bottom: 50px;
+    /*font-size:16px;*/
 }
 
 .footer {
@@ -20,7 +21,7 @@ body
 }
 
 @media screen and (max-width: 768px) {
-    body { padding-top: 0px; }
+    body { padding-top: 70px; }
 }
 .wrapper {
     float: none;
@@ -28,6 +29,7 @@ body
     width:80%;
     text-align:center;
     height:inherit;
+    padding:10px 0px;
 }
 /*footer{*/
     /*color:	#F5F5F5;*/

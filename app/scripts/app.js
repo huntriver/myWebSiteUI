@@ -10,7 +10,14 @@ angular.module('myApp', [
     'uiGmapgoogle-maps',
     'ngAnimate',
     'ajoslin.promise-tracker'
-])
+]).controller('MainCtrl',function(){
+    $('.nav a').click(function(){
+        console.log(1);
+        $('.navbar-collapse').collapse('hide');
+    });
+})
+
+
     .config(function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/home');
 

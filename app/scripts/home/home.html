@@ -1,20 +1,23 @@
 <div class="homePage" ng-controller="homeCtrl">
 
 
-    <section id="intro-section">
+    <section class="container-fluid" id="intro-section">
 
         <div class="wrapper">
-            <div class="lead">
-                <p>hi I'm Xinhe</p>
-                <p>I am a coder and designer.</p>
-                <p>I like creating fun and beautiful work</p>
+            <div class="row">
+                <p class="lead">hi I'm Xinhe</p>
             </div>
+            <div class="row">
+                <p class="lead">I am a coder and designer.</p></div>
+            <div class="row">
+                <p class="lead">I like creating fun and beautiful work</p></div>
+
         </div>
 
 
     </section>
 
-    <section id="project-section">
+    <section class="container-fluid" id="project-section">
         <div class="wrapper">
             <div class="row">
                 <h2 class="title">my recent projects</h2>
@@ -49,19 +52,20 @@
             </div>
         </div>
     </section>
-    <section id="skill-section" my-waypoint>
+
+    <section class="container-fluid" id="skill-section" my-waypoint>
         <div class="wrapper">
             <div class="row">
                 <h2 class="title">my skills</h2>
             </div>
             <div class="row">
 
-                <div bar-chart data="bardata" config="barconfig" animation="animation" style="width:70%;margin:0 auto">
+                <div bar-chart data="bardata" config="barconfig" animation="animation" style="width:100%;margin:0 auto">
                 </div>
             </div>
         </div>
     </section>
-    <section id="about-section">
+    <section class="container-fluid" id="about-section">
         <div class="wrapper">
             <div class="row">
                 <h2 class="title">About me</h2>

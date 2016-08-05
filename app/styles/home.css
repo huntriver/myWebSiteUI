@@ -13,15 +13,16 @@
 .homePage #intro-section {
     background: #2B2B2B;
     color: #ffffff;
-
-
 }
+
 .homePage #intro-section p{
     margin-bottom: 10px;
-    font-size: 40px;
+    font-size:40px;
     margin:0;
     padding: 0;
 }
+
+
 
 .homePage #project-section .projectContainer{
     max-width: 100%;
