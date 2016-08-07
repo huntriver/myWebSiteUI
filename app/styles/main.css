@@ -1,0 +1,59 @@
+/* line 2, ../sass/main.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, ../sass/main.scss */
+html {
+  position: relative;
+  min-height: 100%;
+}
+/* line 12, ../sass/main.scss */
+html body#myapp {
+  background-color: #F6F6F6;
+  padding-top: 70px;
+  margin-bottom: 50px;
+  font-family: "Tahoma", Arial, sans-serif;
+}
+/* line 17, ../sass/main.scss */
+html body#myapp .wrapper {
+  float: none;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  height: inherit;
+  padding: 10px 0px;
+}
+/* line 26, ../sass/main.scss */
+html body#myapp [ui-view].ng-enter {
+  transition: 0.5s linear all;
+  opacity: 0;
+}
+/* line 31, ../sass/main.scss */
+html body#myapp [ui-view].ng-enter-active {
+  opacity: 1;
+}
+/* line 35, ../sass/main.scss */
+html body#myapp [ui-view].ng-leave {
+  transition: 0.5s linear all;
+  opacity: 1;
+}
+/* line 40, ../sass/main.scss */
+html body#myapp [ui-view].ng-leave-active {
+  opacity: 0;
+}
+/* line 43, ../sass/main.scss */
+html body#myapp .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+  color: #F5F5F5;
+  background-color: #000000;
+}
+/* line 51, ../sass/main.scss */
+html body#myapp .footer section {
+  padding: 10px 0px;
+}

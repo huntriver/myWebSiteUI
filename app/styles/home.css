@@ -1,203 +1,206 @@
-
-.homePage section{
- /*margin-bottom:20px;*/
-    padding-bottom: 20px;
-    line-height: 1.2;
+/* line 4, ../sass/home.scss */
+.homePage section {
+  /*margin-bottom:20px;*/
+  padding-bottom: 20px;
+  line-height: 1.2;
 }
-.homePage  .lead{
-    padding-top: 30px;
-    padding-bottom:30px;
-    margin-bottom:0px;
+/* line 9, ../sass/home.scss */
+.homePage .lead {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 0px;
 }
-
+/* line 14, ../sass/home.scss */
+.homePage .title {
+  margin-top: 40px;
+  text-align: left;
+  color: #5d5d5d;
+  font-weight: 500;
+  font-size: 30px;
+  font-family: "Tahoma", Arial, sans-serif;
+}
+/* line 22, ../sass/home.scss */
 .homePage #intro-section {
-    background: #2B2B2B;
-    color: #ffffff;
+  background: #2B2B2B;
+  color: #ffffff;
 }
-
-.homePage #intro-section p{
-    margin-bottom: 10px;
-    font-size:40px;
-    margin:0;
-    padding: 0;
+/* line 25, ../sass/home.scss */
+.homePage #intro-section p {
+  margin-bottom: 10px;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
 }
-
-
-
-.homePage #project-section .projectContainer{
-    max-width: 100%;
-
-    padding: 20px 10px;
-
+/* line 34, ../sass/home.scss */
+.homePage #project-section .projectContainer {
+  max-width: 100%;
+  padding: 20px 10px;
 }
-
-
-.homePage #project-section .title{
-    margin-top:40px;
-    text-align:left;
-    color:#5d5d5d;
-    font-weight:500;
-    font-size:30px;
-    font-family: "Tahoma",Arial,sans-serif;
+/* line 38, ../sass/home.scss */
+.homePage #project-section .projectContainer .project-name {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 500;
 }
-
-
-/*.homePage #project-section .projectContainer img{*/
-    /*width:100%;*/
-    /*height:auto;*/
-/*}*/
-
-.homePage #project-section .projectContainer .project-name{
-    margin-top:20px;
-    font-size:30px;
-    font-weight:500;
+/* line 44, ../sass/home.scss */
+.homePage #project-section .projectContainer .hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #42b078;
 }
-.homePage #project-section #tbc{
-    font-size: 40px;
-    font-family: "Tahoma",Arial,sans-serif;
-    font-weight: bold;
- }
-
-
-
-.homePage #skill-section{
-    background: 	#A9A9A9;
-    color: #ffffff;
+/* line 54, ../sass/home.scss */
+.homePage #project-section .projectContainer .hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 20px 20px;
 }
-
-.homePage #skill-section .title{
-    margin-top:40px;
-    text-align:left;
-    color:#F5F5F5;
-    font-weight:500;
-    font-size:50px;
-    font-family: "Tahoma",Arial,sans-serif;
+/* line 64, ../sass/home.scss */
+.homePage #project-section .projectContainer .hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
-
-.homePage #skill-section .x.axis path{
-     display:none;
- }
-.homePage #skill-section .x.axis .tick line{
-    display:none;
+/* line 78, ../sass/home.scss */
+.homePage #project-section .projectContainer .hovereffect:hover img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
-.homePage #skill-section .bar{
-    fill:	#F5F5F5;
+/* line 84, ../sass/home.scss */
+.homePage #project-section .projectContainer .hovereffect:hover h2:after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
-.homePage #skill-section .x.axis .tick text{
-    font-family: "Tahoma",Arial,sans-serif;
-    font-size:15px;
-    font-weight: 600;
+/* line 88, ../sass/home.scss */
+.homePage #project-section .projectContainer .hovereffect:hover a, .homePage #project-section .projectContainer .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
-
-.homePage #about-section{
-    background: 	#696969;
-    color: #ffffff;
+/* line 96, ../sass/home.scss */
+.homePage #project-section .projectContainer .hovereffect.hover img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
-.homePage #about-section .title{
-     margin-top:40px;
-     text-align:left;
-     color:#F5F5F5;
-     font-weight:500;
-     font-size:50px;
-     font-family: "Tahoma",Arial,sans-serif;
- }
-
-.homePage #about-section p{
-    margin-top:20px;
-    text-align:center;
-    color:#F5F5F5;
-    font-weight:lighter;
-    font-size:25px;
-    font-family: "Tahoma",Arial,sans-serif;
-    margin-bottom:20px;
+/* line 102, ../sass/home.scss */
+.homePage #project-section .projectContainer .hovereffect.hover h2:after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
-
-
-.hovereffect {
-    width: 100%;
-    height: 100%;
-    float: left;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    cursor: default;
-    background: #42b078;
+/* line 106, ../sass/home.scss */
+.homePage #project-section .projectContainer .hovereffect.hover a, .homePage #project-section .projectContainer .hovereffect.hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
-
-.hovereffect .overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    padding: 20px 20px;
+/* line 113, ../sass/home.scss */
+.homePage #project-section .projectContainer .hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  /*font-size: 1.2vw;*/
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: transparent;
 }
-
-.hovereffect img {
-    display: block;
-    position: relative;
-    max-width: none;
-    width: calc(100% + 20px);
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(-10px,0,0);
-    transform: translate3d(-10px,0,0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+/* line 123, ../sass/home.scss */
+.homePage #project-section .projectContainer .hovereffect h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
 }
-
-.hovereffect:hover img,.hovereffect.hover img{
-    opacity: 0.4;
-    filter: alpha(opacity=40);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+/* line 137, ../sass/home.scss */
+.homePage #project-section .projectContainer .hovereffect a, .homePage #project-section .projectContainer .hovereffect p {
+  color: #FFF;
+  /*font-size:0.6vw;*/
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
 }
-
-.hovereffect h2 {
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    /*font-size: 1.2vw;*/
-    overflow: hidden;
-    padding: 0.5em 0;
-    background-color: transparent;
+/* line 151, ../sass/home.scss */
+.homePage #project-section #tbc {
+  font-size: 40px;
+  font-family: "Tahoma", Arial, sans-serif;
+  font-weight: bold;
 }
-
-.hovereffect h2:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    content: '';
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-    -webkit-transform: translate3d(-100%,0,0);
-    transform: translate3d(-100%,0,0);
+/* line 158, ../sass/home.scss */
+.homePage #skill-section {
+  background: #A9A9A9;
+  color: #ffffff;
 }
-
-.hovereffect:hover h2:after,.hovereffect.hover h2:after {
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+/* line 161, ../sass/home.scss */
+.homePage #skill-section .title {
+  color: #F5F5F5;
+  font-size: 50px;
 }
-
-.hovereffect a, .hovereffect p {
-    color: #FFF;
-    /*font-size:0.6vw;*/
-    opacity: 0;
-    filter: alpha(opacity=0);
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(100%,0,0);
-    transform: translate3d(100%,0,0);
+/* line 166, ../sass/home.scss */
+.homePage #skill-section .bar {
+  fill: #F5F5F5;
 }
-
-.hovereffect:hover a, .hovereffect:hover p,.hovereffect.hover a, .hovereffect.hover p {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+/* line 170, ../sass/home.scss */
+.homePage #skill-section .x.axis path {
+  display: none;
+}
+/* line 174, ../sass/home.scss */
+.homePage #skill-section .x.axis .tick line {
+  display: none;
+}
+/* line 178, ../sass/home.scss */
+.homePage #skill-section .x.axis .tick text {
+  font-family: "Tahoma", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+/* line 186, ../sass/home.scss */
+.homePage #about-section {
+  background: #696969;
+  color: #ffffff;
+}
+/* line 189, ../sass/home.scss */
+.homePage #about-section .title {
+  color: #F5F5F5;
+  font-size: 50px;
+}
+/* line 194, ../sass/home.scss */
+.homePage #about-section p {
+  margin-top: 20px;
+  text-align: center;
+  color: #F5F5F5;
+  font-weight: lighter;
+  font-size: 25px;
+  font-family: "Tahoma", Arial, sans-serif;
+  margin-bottom: 20px;
 }

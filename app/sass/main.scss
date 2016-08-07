@@ -1,0 +1,56 @@
+@import "_init.scss";
+*
+{
+  margin:  0;
+  padding: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+
+body#myapp {
+  background-color: $background-color;
+  padding-top: $header-height;
+  margin-bottom: 50px;
+  font-family: "Tahoma", Arial, sans-serif;
+  .wrapper {
+    float: none;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    height: inherit;
+    padding: 10px 0px;
+  }
+
+  [ui-view].ng-enter {
+    transition: 0.5s linear all;
+    opacity: 0;
+  }
+
+  [ui-view].ng-enter-active {
+    opacity: 1;
+  }
+
+  [ui-view].ng-leave {
+    transition: 0.5s linear all;
+    opacity: 1;
+  }
+
+  [ui-view].ng-leave-active {
+    opacity: 0;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height:$footer-height;
+    color: $footer-color;
+    background-color:$footer-background-color;
+    section {
+      padding: 10px 0px;
+    }
+  }
+}
+}

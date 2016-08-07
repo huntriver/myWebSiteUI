@@ -59,7 +59,14 @@ module.exports = function (grunt) {
                 }
             }
         },
-
+ compass:{
+                dev: {                    // Another target
+                    options: {
+                        sassDir: 'app/sass',
+                        cssDir: 'app/styles'
+                    }
+                }
+            },
 
         //Connect Settings for serve the files
         connect: {
@@ -117,10 +124,10 @@ module.exports = function (grunt) {
             //     files: ['e2e-tests/spec/{,*/}*.js'],
             //     tasks: ['karma']
             // },
-            // compass: {
-            //     files: ['app/sass/{,*/}*.{scss,sass}'],
-            //     tasks: ['compass:dev']
-            // },
+            compass: {
+                files: ['app/sass/{,*/}*.{scss,sass}'],
+                tasks: ['compass:dev']
+            },
             gruntfile: {
                 files: ['Gruntfile.js']
             }
@@ -220,7 +227,7 @@ module.exports = function (grunt) {
     ]);
     grunt.registerTask('dev', [
         'wiredep',
-        //'compass',
+        'compass',
         'includeSource',
         'connect:dev',
         'watch',

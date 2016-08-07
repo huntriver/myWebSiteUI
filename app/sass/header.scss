@@ -1,0 +1,54 @@
+@import "_init.scss";
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: $header-height;
+  /*background-color: rgba(246, 246, 246, 0.80);*/
+  background-color: $background-color;
+  @media screen and (min-width: 768px) {
+
+    background-color: rgba(246, 246, 246, 0.80);
+
+  }
+  .navbar.navbar-default {
+    border-color: transparent;
+    background-color: inherit;
+    @media screen and (min-width: 768px) {
+      background-color: transparent;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    a {
+      color: #5d5d5d;
+      font-size: 25px;
+      font-weight: 400;
+      font-family: "Tahoma", Arial, sans-serif;
+    }
+    .navbar-nav > .active > a {
+      color: #0f0f0f;
+      font-weight: 700;
+      background-color: transparent;
+     &:hover{
+       color: #0f0f0f;
+       font-weight: 700;
+       background-color: transparent;
+     }
+    }
+
+  }
+
+}
+
+
+//header .navbar-default .navbar-nav > .active > a, header .navbar-default .navbar-nav > .active > a:focus {
+//  color: #0f0f0f;
+//  font-weight: 700;
+//  background-color: transparent;
+//
+//}
+//

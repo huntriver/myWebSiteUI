@@ -1,60 +1,50 @@
-header .navbar.navbar-default{
-    border-color: transparent;
-    background-color: #F6F6F6;
-}
-
-@media (min-width: 768px) {
-    header .navbar.navbar-default {
-        background-color: transparent;
-        border-color: transparent;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-}
-/*body .navbar ul{*/
-    /*float:right*/
-
-/*}*/
-header .navbar.navbar-default a{
-    color: #5d5d5d;
-    font-size: 25px;
-    font-weight:400;
-    font-family: "Tahoma",Arial,sans-serif;
-}
-/*header .navbar.navbar-default a:hover{*/
-    /*!*color: #cb5211;*!*/
-    /*font-weight:700;*/
-    /*background-color: inherit;*/
-
-
-/*header .navbar.navbar-default li.active a:hover{*/
-    /*!*color: #cb5211;*!*/
-    /*!*font-weight:700;*!*/
-    /*background-color: inherit;*/
-
-/*}*/
-header .navbar-default .navbar-nav > .active > a, header .navbar-default .navbar-nav > .active > a:focus{
-    color: #0f0f0f;
-    font-weight:700;
-    background-color: transparent;
-
-}
-
-
+/* line 3, ../sass/header.scss */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 100%;
-    height: 70px;
-    /*background-color: rgba(246, 246, 246, 0.80);*/
-    background-color: #F6F6F6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 70px;
+  /*background-color: rgba(246, 246, 246, 0.80);*/
+  background-color: #F6F6F6;
 }
-
-@media (min-width: 768px) {
-    header {
-        background-color: rgba(246, 246, 246, 0.80);
-    }
+@media screen and (min-width: 768px) {
+  /* line 3, ../sass/header.scss */
+  header {
+    background-color: rgba(246, 246, 246, 0.8);
+  }
+}
+/* line 17, ../sass/header.scss */
+header .navbar.navbar-default {
+  border-color: transparent;
+  background-color: inherit;
+}
+@media screen and (min-width: 768px) {
+  /* line 17, ../sass/header.scss */
+  header .navbar.navbar-default {
+    background-color: transparent;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+/* line 26, ../sass/header.scss */
+header .navbar.navbar-default a {
+  color: #5d5d5d;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Tahoma", Arial, sans-serif;
+}
+/* line 32, ../sass/header.scss */
+header .navbar.navbar-default .navbar-nav > .active > a {
+  color: #0f0f0f;
+  font-weight: 700;
+  background-color: transparent;
+}
+/* line 36, ../sass/header.scss */
+header .navbar.navbar-default .navbar-nav > .active > a:hover {
+  color: #0f0f0f;
+  font-weight: 700;
+  background-color: transparent;
 }
